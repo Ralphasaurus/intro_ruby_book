@@ -1,0 +1,17 @@
+Ch.1 
+  three most important things to remember regarding documentation:
+    1. what class or module you are looking at.
+    2. available class methods
+    3. available instance methods - and how to use these different methods
+    
+  also remember:
+    1. how to navigate the CLI. mkdir, cd, cd .., touch, cat, rm, etc
+    2. how to use irb for testing out ruby code snippets. exit to close, ctrl-c to abort an infinite loop
+    3. how to execute a ruby file: "ruby example_file.rb" will run the file.
+    
+  used gem install pry to install pry for debugging
+    to use pry for debugging you need to put "require "pry"" in your codefile
+    then use "binding.pry" after the code you wish to debug. it will pause the code execution and open up pry for you to check it out.
+    Ctrl-d will exit this.
+    
+    
