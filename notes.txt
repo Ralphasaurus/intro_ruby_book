@@ -14,4 +14,37 @@ Ch.1
     then use "binding.pry" after the code you wish to debug. it will pause the code execution and open up pry for you to check it out.
     Ctrl-d will exit this.
     
+  modulo operator 16 % 4   value on the left of the "%" is the quotient, value on the right is the "modulus"
+    the remainder is 0 so this will return 0
+                  16 % 3 will return 1
+    division operator is kinda similar 15 / 4 will return 3 because the division operator only returns integers. if you want to be precise 
+      youre going to have to use float's.
+    
+  #remainder method example 16.remainder(5)
+    will return 1, the remainder of dividing 5 into 16.
+    
+  #divmod method does something different... 16.divmod(5)
+    will return [3, 1]  giving you the number of times the argument went in and also the remainder.
+    
+  Elements of an array are stored as an index 0-w/e so you can access any element by calling the index number [0] for example.
+  
+  Hash or dictionaries are a set of key, value pairs. They are held in {} like a JS object.
+  
+  When you type something in at the irb prompt you are creating an expression. And expression is anything that can be evaluated. Almost 
+    everything you write in Ruby is an expression. And expression in Ruby always returns something, even if thats an error message or nil.
+    
+  Puts is a method that prints something to the screen. However puts does not return what was printed to the screen. Expressions
+    DO something, and also RETURN something. The value RETURNED is not necessarily that action that was performed.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
     
