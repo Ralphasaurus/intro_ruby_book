@@ -1,0 +1,29 @@
+arr = [1, 2, 3]
+
+for i in arr do
+  a = 5      # a is initialized here
+end
+
+puts a       # is it accessible here?
+
+it is accessible there because 'for' is not a method. it's apart of the Ruby language. 'a' has access to the value because it 
+  wasn't created in a block. Had it been created in a method's block it would've changed the scope and you can't reach into a scope, only out.
+
+CONSTANT's are decarled by using all caps for the variable name. They cannot be declared in method definitions. Can be used throughout 
+  your applications scopes.
+  example.. MY_CONSTANT = "I'm available throughout your app."
+  
+Global Variables are declared with a $. And also can be used throughout you app.
+  example.. $var = "I can also be used throught app"
+
+Class variables are declared by @@ before the name. They need to be declared at the class level outside of any methods. They can then be
+  altered using class or instance method definitions.
+  example.. @@instances = 0
+
+Instance Variables are declared by one @ before the name.
+  example.. @var
+  
+Local Variables are regular variables and must obey all scope boundaries. 
+  example.. var = "I must be passed around to cross scope boundaries"
+
+  
