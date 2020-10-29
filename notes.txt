@@ -36,7 +36,13 @@ Ch.1
   Puts is a method that prints something to the screen. However puts does not return what was printed to the screen. Expressions
     DO something, and also RETURN something. The value RETURNED is not necessarily that action that was performed.
   
-  
+  CHAPTER 3
+  Methods: when defining a method you can define parameters on that method. Arguments can be passed the method through these parameters
+    once in the method they become local variables to the method. So for example:
+      We   def say(words)   # the say method and assigned words as a parameter.
+      
+      Outside the method when we call it (OR INVOKE IT, ie METHOD INVOCATION) using say("whatever words") we are passing in
+      "whatever words" as an argument to the method.
   
   
   
