@@ -43,6 +43,18 @@ Ch.1
       
       Outside the method when we call it (OR INVOKE IT, ie METHOD INVOCATION) using say("whatever words") we are passing in
       "whatever words" as an argument to the method.
+      
+      #Method invocation with a block
+      [1,2,3].each do |num|
+        puts num
+      end
+      
+      #Method defined
+      def print_num(num)
+        puts num
+      end
+      
+      
   
   
   
