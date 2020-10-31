@@ -1,0 +1,38 @@
+if/elsif/else end
+one lines example: puts "x = 4" if x == 4
+puts "x is not 4" unless x == 4
+
+the expressions or values that an operator uses are called it's operands.
+
+when comparing strings such as "42" > "402" this will result in => true. Even though it's mathmatically false the way Ruby compares strings is
+from left to right. so "4" and "4" are equal "2" IS greater than "0" so it will return true.
+
+you cannot compare different types of data in this way, for example "45" > 66 will result in an argument error because your trying to 
+compare a string with an integer which doesn't work.
+
+and operator && both true for true 
+or operator || one or the other true for true, both false for false
+the not operator ! inverts the boolean value on a given expression. for example !(5 == 5) turns the true statement into false.
+
+the order of presidence for evaluating expressions in Ruby is::
+       1. comparison operators >, <, >=, <=
+       2. equality operators ==, !=
+       3. logiacal AND &&
+       4. logical OR ||
+       
+so if we had a if statement:
+    if x && y || z
+    #do something
+    end
+    
+    if x && y evaluates to true then the code will execute the #do something. if x && y evaluates to false than it will compare false to z.
+    if z is true then it will execute the #do something code. if z ends up being false aswell then the code will simply end.
+    
+THE TERNARY OPERATOR is a simple one line if/else statement. It uses a "?" and ":" 
+  example: true ? "this is true" : "this is not true"
+  
+  so from left to right it evalutes if to the left of ? is true it executes the thing to the left of the : otherwise the code to the right of
+  the : is executed.
+  
+  
+    
