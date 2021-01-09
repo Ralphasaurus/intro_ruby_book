@@ -1,0 +1,50 @@
+Object Orientated Programming notes...
+
+So an object is instantiated from a class. 
+Objects are defined through a class. 
+Use CamelCase when defining a class. 
+You can think of classes as basic outlines of what an object should be able to do and what it's made of..
+To define a class:  use the reserved word "class" to define a class as opposed to "def" when defining a method.
+example: 
+  
+  class monkeyBrain
+    code...
+  end
+  
+Ruby class files should be in snake_case and should include the name of the class.
+So for the class above the file name should look like "monkey_brain.rb".
+
+To instantiate the class you would say:
+  ralph = monkeyBrain.new
+  
+So this stores a new instance of the monkeyBrain class and stores it in the variable ralph.
+You now have an object. We say that ralph is an object or instance of the class monkeyBrain.
+
+The entire workflow of creating a new object or instance of a class is called instantiation.
+
+A module is a collection of behaviors like a class but is used by mixing it into a class through mixins. (include)
+Lets say we want to have a behavior or method in our monkeyBrain class called "surf" so ralph the monkeyBrain can surf...
+We would put the reserved word include in our class to use the surf method... 
+
+module Speak
+  def speak(sound)
+    puts sound
+  end
+end
+
+class GoodDog
+  include Speak
+end
+
+class HumanBeing
+  include Speak
+end
+
+sparky = GoodDog.new
+sparky.speak("Arf!")        # => Arf!
+bob = HumanBeing.new
+bob.speak("Hello!")         # => Hello!
+
+
+
+
